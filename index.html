@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curso de Bolos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <h1 class="titulo-header">Cursos de Bolos</h1>
+        <button class="open-modal" onclick="abrirModalLogin()">Login</button>
+        <button class="open-modal" onclick="abrirModalCadastro()">
+          Cadastre-se
+        </button>
+      </div>
+    </header>
+    <div class="bg-modal" id="modalLogin">
+      <div class="modal">
+        <span class="close" id="close" onclick="fecharModalLogin()"
+          >&times;</span
+        >
+        <form class="login">
+          <h3>Login</h3>
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Senha" />
+          <button type="submit">Entrar</button>
+          <a href="#">Esqueceu sua senha?</a><br />
+          <a href="#">Ainda não possui uma conta?</a>
+        </form>
+      </div>
+    </div>
+    <div class="bg-modal" id="modalCadastro">
+      <div class="modal">
+        <span class="close" id="close" onclick="fecharModalCadastro()"
+          >&times;</span
+        >
+        <form class="login">
+          <h3>Cadastro</h3>
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Senha" />
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="menu-cursos">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bolosDecorados.html">Bolos Decorados</a></li>
+        <li><a href="bolosCaseiros.html">Bolos Caseiros</a></li>
+        <li><a href="docesDeFesta.html">Doces de Festas</a></li>
+      </ul>
+
+    <div>
+      <h3 class="titulo-conteudo">
+        Ganhe dinheiro fazendo receitas maravilhosas de bolos e doces. 
+      </h3>
+    </div>
+
+    </div>
+    <div class="carrosel" id="slider">
+      <img class="selected" src="imagens/bolo1.jpg" />
+      <img src="imagens/bolo2.jpg" />
+      <img src="imagens/bolo3.jpg" />
+      <img src="imagens/bolo4.jpg" />
+      <img src="imagens/bolo5.jpg" />
+      <img src="imagens/bolo6.jpg" />
+      <img src="imagens/bolo7.jpg" />
+      <img src="imagens/bolo8.jpg" />
+    </div>
+    <script src="modal.js"></script>
+    <script src="carroselImagens.js"></script>
+  </body>
+</html>

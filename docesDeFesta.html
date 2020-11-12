@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bolos Decorados</title>
+    <link rel="stylesheet" type="text/css" href="bolosDecorados.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="carrosel.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <h1 class="titulo-header">Cursos de Bolos</h1>
+        <button onclick="abrirModalLogin()">Login</button>
+        <button class="open-modal" onclick="abrirModalCadastro()">
+          Cadastre-se
+        </button>
+      </div>
+    </header>
+    <div class="bg-modal" id="modalLogin">
+      <div class="modal">
+        <span class="close" id="close" onclick="fecharModalLogin()"
+          >&times;</span
+        >
+        <form class="login">
+          <h3>Login</h3>
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Senha" />
+          <button type="submit">Entrar</button>
+          <a href="#">Esqueceu sua senha?</a><br />
+          <a href="#">Ainda não possui uma conta?</a>
+        </form>
+      </div>
+    </div>
+    <div class="bg-modal" id="modalCadastro">
+      <div class="modal">
+        <span class="close" id="close" onclick="fecharModalCadastro()"
+          >&times;</span
+        >
+        <form class="login">
+          <h3>Cadastro</h3>
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Senha" />
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="menu-cursos">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bolosDecorados.html">Bolos Decorados</a></li>
+        <li><a href="bolosCaseiros.html">Bolos Caseiros</a></li>
+        <li><a href="docesDeFesta.html">Doces de Festas</a></li>
+      </ul>
+    </div>
+    <div class="conteudo-bolosDecorados">
+      <h1>Doces de Festas</h1>
+
+      <ul class="lista-bolosDecorados">
+        <p>Conteúdo do Curso</p>
+        <li>Brigadeiro tradicional, branco, amargo</li>
+        <li>Brigadeiro de paçoca, churros, maracujá</li>
+        <li>Beijinho</li>
+        <li>Bala de ninho</li>
+        <li>Bicho de pé</li>        
+      </ul>
+    </div>
+    <div class="carroselBolos" id="slider">
+      <img class="selected" src="imagens/brigadeiro.jpg" />
+      <img src="imagens/brigadeiro02.jpg" />
+      <img src="imagens/brigadeiro03.jpg" />
+      <img src="imagens/brigadeiro04.jpg" />
+    </div>
+    <script src="modal.js"></script>
+    <script src="carroselImagens.js"></script>    
+  </body>
+</html>

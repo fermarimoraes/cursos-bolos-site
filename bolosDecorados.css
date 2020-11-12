@@ -1,0 +1,22 @@
+.conteudo-bolosDecorados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #BF360C;
+    border: solid 1px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(255, 100, 60, 0.2);
+    border-radius: 50px 0 50px 0px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.lista-bolosDecorados {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  
+}
